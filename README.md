@@ -43,7 +43,8 @@ Early build. See [PRD.md](./PRD.md) for the full spec and phased plan.
 - [x] Phase 2 - permission model + approval queue + audit log (verified)
 - [x] Phase 3 - eval suite: citation-validity check + LLM-as-judge + scorecard (verified)
 - [x] R5 - expose Foreman over MCP (stdio): run_research / list_briefs / get_brief (verified)
-- [ ] Phase 4 - generalize the workbench + deploy + case study
+- [x] Deployed (Vercel) + case study + walkthrough
+- [ ] Next - generalize into a multi-agent workbench; Streamable-HTTP MCP transport
 
 First live run (Haiku 4.5 + Brave free): 25 tool calls, 3 cited findings saved,
 paused at `publish_brief`, resumed on approval, published the brief.
