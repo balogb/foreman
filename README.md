@@ -27,11 +27,9 @@ run end to end - live trace, human-in-the-loop approval, a cited report, and the
 audit trail as live SQL against the run's own rows - without an operator key or any
 token spend.
 
-<!-- Screen recording: on github.com, click "Edit" on this file and drag the .mov onto
-     the line below. GitHub uploads it to its CDN and inserts an inline video player
-     automatically (supports .mp4/.mov/.webm up to ~100MB). Then delete this comment. -->
+**Watch the 2-minute recording:**
 
-<!-- DRAG THE SCREEN RECORDING HERE -->
+https://github.com/user-attachments/assets/27446d56-6db7-4198-afbb-4b63fd5f5a1a
 
 ## The lifecycle
 
