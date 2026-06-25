@@ -118,7 +118,30 @@ export default function DemoPage() {
           approval, a cited report, and the audit trail straight from the database.
         </p>
 
-        {/* Optional: drop a Loom/YouTube embed of the screen recording here later. */}
+        <div className="mt-10">
+          <video
+            controls
+            preload="metadata"
+            className="w-full rounded-lg border border-zinc-200 shadow-sm dark:border-zinc-800"
+          >
+            <source
+              src="https://github.com/user-attachments/assets/27446d56-6db7-4198-afbb-4b63fd5f5a1a"
+              type="video/mp4"
+            />
+            Your browser cannot play this video.
+          </video>
+          <p className="mt-2 text-sm text-zinc-500">
+            Trouble playing it inline?{" "}
+            <a
+              href="https://github.com/balogb/foreman/issues/3"
+              className="underline hover:text-zinc-800 dark:hover:text-zinc-200"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Watch the 2-minute recording on GitHub →
+            </a>
+          </p>
+        </div>
 
         <div className="mt-12 rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-950">
           <p className="text-sm leading-6 text-zinc-600 dark:text-zinc-400">
