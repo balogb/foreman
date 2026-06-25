@@ -56,3 +56,6 @@ gha-creds-*.json
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Raw screen-capture working folder (curated assets live in public/demo/; the .mov is 71MB)
+screencaps/
