@@ -88,7 +88,10 @@ export default function RunPage() {
         setData(json);
         const status = json.run?.status;
         if (active && (status === "running" || status === "awaiting_approval")) {
-          timer = setTimeout(tick, 2000);
+          // Poll every 5s while active. Each poll re-pulls the full run payload
+          // from the DB, so a tighter interval multiplies network egress; 5s keeps
+          // the live view responsive while cutting transfer ~60% vs the prior 2s.
+          timer = setTimeout(tick, 5000);
         }
       } catch (e) {
         if (active) setErr(e instanceof Error ? e.message : String(e));
