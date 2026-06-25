@@ -19,6 +19,18 @@ The first agent that runs on it is a real tool: an **AI-agents market-intelligen
 researcher** that tracks the public agent-product landscape and hands you cited
 briefs, surfacing only what is new since last time.
 
+## Demo
+
+**Watch a real run, no key required:** the static walkthrough at
+[foreman-mauve.vercel.app/demo](https://foreman-mauve.vercel.app/demo) shows a full
+run end to end - live trace, human-in-the-loop approval, a cited report, and the
+audit trail as live SQL against the run's own rows - without an operator key or any
+token spend.
+
+**Watch the 2-minute recording:**
+
+https://github.com/user-attachments/assets/27446d56-6db7-4198-afbb-4b63fd5f5a1a
+
 ## The lifecycle
 
 1. **Create** an agent (name, role, model).

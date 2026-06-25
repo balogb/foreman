@@ -44,12 +44,20 @@ export default function Home() {
           that surfaces what is new and hands you cited briefs.
         </p>
 
-        <a
-          href="/agents"
-          className="mt-6 inline-block rounded-lg bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white dark:bg-zinc-100 dark:text-zinc-900"
-        >
-          Open agents
-        </a>
+        <div className="mt-6 flex flex-wrap items-center gap-4">
+          <a
+            href="/agents"
+            className="inline-block rounded-lg bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white dark:bg-zinc-100 dark:text-zinc-900"
+          >
+            Open agents
+          </a>
+          <a
+            href="/demo"
+            className="text-sm font-medium text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+          >
+            See a recorded run, no key required →
+          </a>
+        </div>
       </main>
     </div>
   );
