@@ -1,10 +1,28 @@
 const LIFECYCLE = [
-  { step: "Create", body: "Define an agent: name, role, model." },
-  { step: "Configure", body: "Set each tool to allow, require approval, or deny. Toggle memory and budget." },
-  { step: "Run", body: "Give it a task and watch the live execution trace." },
-  { step: "Approve", body: "High-risk actions pause for a human decision, with rationale." },
-  { step: "Audit", body: "Every run and every decision is recorded and reviewable." },
-  { step: "Evaluate", body: "Score the agent against a fixed test suite. Track regressions." },
+  {
+    step: "Permissions",
+    body: "Configure every tool as allowed, denied, or approval-required before the agent runs.",
+  },
+  {
+    step: "Approval",
+    body: "Pause consequential actions for a human decision with the agent's rationale in view.",
+  },
+  {
+    step: "Trace",
+    body: "Persist the reasoning, tool calls, retrieved context, findings, and published output.",
+  },
+  {
+    step: "Audit",
+    body: "Answer who approved what, when, and why from database rows instead of screenshots.",
+  },
+  {
+    step: "Evals",
+    body: "Score quality with citation checks and LLM judgment so regressions are visible.",
+  },
+  {
+    step: "Cost",
+    body: "Use model choice, budgets, prompt caching, and graceful convergence to control spend.",
+  },
 ];
 
 export default function Home() {
@@ -12,15 +30,20 @@ export default function Home() {
     <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-black dark:text-zinc-100">
       <main className="mx-auto max-w-3xl px-6 py-24">
         <p className="text-sm font-medium uppercase tracking-widest text-zinc-500">
-          Foreman
+          Foreman / Public proof artifact
         </p>
         <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">
-          A control plane for trustworthy agents.
+          Governed AI agents, built to be inspected.
         </h1>
         <p className="mt-5 max-w-xl text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-          Wiring an LLM to tools is easy. Making an agent safe to run inside a
-          real organization is the hard part - permissions, approvals, audit,
-          and evaluation. Foreman is that layer.
+          Foreman is a deployed reference implementation for the layer most
+          agent demos skip: permissions, human approval gates, audit trails,
+          evals, cost controls, and MCP access.
+        </p>
+        <p className="mt-5 max-w-xl text-base leading-7 text-zinc-600 dark:text-zinc-400">
+          The first agent is an AI-agents market-intelligence researcher. It
+          searches public sources, fetches anything it cites, dedupes against
+          memory, pauses before publishing, and records the run for review.
         </p>
 
         <ol className="mt-12 grid gap-px overflow-hidden rounded-xl border border-zinc-200 bg-zinc-200 dark:border-zinc-800 dark:bg-zinc-800 sm:grid-cols-2">
@@ -39,17 +62,22 @@ export default function Home() {
           ))}
         </ol>
 
-        <p className="mt-12 text-sm text-zinc-500">
-          First agent in the works: an AI-agents market-intelligence researcher
-          that surfaces what is new and hands you cited briefs.
-        </p>
+        <section className="mt-12 rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-950">
+          <h2 className="font-semibold">Why this matters</h2>
+          <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+            Enterprise agent adoption stalls on control questions: what can the
+            agent do, who approved it, what did it read, did it cite real
+            sources, and did a change make it better or worse? Foreman is built
+            around those questions rather than around a chat transcript.
+          </p>
+        </section>
 
         <div className="mt-6 flex flex-wrap items-center gap-4">
           <a
             href="/agents"
             className="inline-block rounded-lg bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white dark:bg-zinc-100 dark:text-zinc-900"
           >
-            Open agents
+            Open live app
           </a>
           <a
             href="/demo"
