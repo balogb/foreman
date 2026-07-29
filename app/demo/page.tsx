@@ -122,6 +122,20 @@ export default function DemoPage() {
           a tool-using agent with permissions, approval, source grounding, evals,
           cost control, and reviewable evidence of what happened.
         </p>
+        <section className="mt-8 rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-950">
+          <h2 className="font-semibold">Use this as a buyer-facing proof point</h2>
+          <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+            If your team is experimenting with AI but hesitates at the handoff to
+            real work, this is the layer you are missing: permissions before the
+            run, human approval for consequential actions, a queryable audit
+            trail, and evals that show whether quality improved or regressed.
+          </p>
+          <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+            In a readiness audit, this becomes the operating question: which
+            workflow can accept an agent, where does it need review, and what
+            evidence would make the system defensible?
+          </p>
+        </section>
 
         <div className="mt-10">
           <video

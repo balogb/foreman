@@ -19,6 +19,24 @@ The first agent that runs on it is a real tool: an **AI-agents market-intelligen
 researcher** that tracks the public agent-product landscape and hands you cited
 briefs, surfacing only what is new since last time.
 
+## What this proves
+
+Foreman is a proof artifact for one specific claim: I can build AI workflows that
+an organization can inspect, approve, audit, and improve instead of just admire in
+a demo.
+
+Use it to evaluate whether I can help with:
+
+- AI workflow readiness: where an agent can safely enter an existing process
+- human approval gates: what should pause, who decides, and what gets logged
+- auditability: how to answer what the agent did, why, and who approved it
+- evaluation: how to tell whether an agent is getting better or worse
+- cost control: model choice, budgets, prompt caching, and graceful failure modes
+
+This is the same operating model behind a Legacy Sync readiness audit or governed
+AI workflow build: start with the workflow, define the risk points, add approval
+and evidence, then automate only what can be trusted.
+
 ## Demo
 
 **Watch a real run, no key required:** the static walkthrough at
