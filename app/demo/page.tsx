@@ -6,7 +6,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Foreman - A recorded run",
+  title: "Recorded Governed Agent Run",
   description:
     "A real Foreman run, captured end to end: live trace, human-in-the-loop approval, a cited report, and the audit trail in the database. No key required.",
 };
@@ -112,11 +112,30 @@ export default function DemoPage() {
           See it work, no keys required.
         </h1>
         <p className="mt-5 max-w-xl text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-          The live demo gates real runs behind an operator key so a public URL
-          cannot run up an API bill. This is a real run, captured end to end - so
-          you can see the whole thing without one: a live trace, a human-in-the-loop
-          approval, a cited report, and the audit trail straight from the database.
+          The live app gates model-spending actions behind an operator key. This
+          page needs no key: it shows a captured run end to end, including the
+          trace, human approval gate, cited report, and database-backed audit
+          trail.
         </p>
+        <p className="mt-5 max-w-xl text-base leading-7 text-zinc-600 dark:text-zinc-400">
+          The point is not the research topic. The point is the operating model:
+          a tool-using agent with permissions, approval, source grounding, evals,
+          cost control, and reviewable evidence of what happened.
+        </p>
+        <section className="mt-8 rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-950">
+          <h2 className="font-semibold">Use this as a buyer-facing proof point</h2>
+          <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+            If your team is experimenting with AI but hesitates at the handoff to
+            real work, this is the layer you are missing: permissions before the
+            run, human approval for consequential actions, a queryable audit
+            trail, and evals that show whether quality improved or regressed.
+          </p>
+          <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+            In a readiness audit, this becomes the operating question: which
+            workflow can accept an agent, where does it need review, and what
+            evidence would make the system defensible?
+          </p>
+        </section>
 
         <div className="mt-10">
           <video
